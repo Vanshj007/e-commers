@@ -1,0 +1,246 @@
+.All-box{
+     height: 300vh;
+        width: 23%;
+        line-height: 60px;
+}
+.card-first{
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 80px 80px;
+}
+ #overlay{
+        height: 300vh;
+    }
+    .product-details-box{
+        top: 20%;
+    }
+    .cart-box{
+         top: 17%;
+   left: 80%;
+   height: 500px;
+    width: 400px;
+    }
+    .amazon-acc{
+       padding: 30px 150px 30px 150px;
+    }
+    .main-box{
+       gap: 50px;
+    }
+    .logo span{
+    font-size:18px;
+}
+.location{
+    font-size: 30px;
+}
+#userloct{
+    font-size: 21px;
+}
+header{
+    height: 80px;
+    white-space: nowrap;
+}
+.logo{
+    padding: 5px;
+}
+.lang span{
+    font-size: 15px;
+}
+.lists:nth-child(1){
+    font-size: 15px;
+}
+.lists span:nth-child(2){
+   font-weight: bold;
+   font-size: 17px;
+}
+.list-manu{
+    height: 550px;
+    width: 600px;
+}
+.top-menu div span{
+    font-size: 18px;
+}
+.left-menu,.right-menu{
+    font-size: 16px;
+}
+.left-menu span{
+    font-size: 24px;
+}
+.right-menu span{
+    font-size: 24px;
+}
+.Return span:first-child{
+    font-size: 15px;
+}
+.Return span:nth-child(2){
+    font-size: 18px;
+}
+.nav{
+    height: 45px;
+}
+.Head{
+    font-size: 30px;
+}
+.amazon-acc li{
+    font-size: 16px;
+}
+.amazon-acc{
+    padding: 30px 60px 30px 60px;
+}
+.amazon-acc p{
+    font-size: 20px;
+}
+.box{
+    font-size: 16px;
+}
+.box8{
+    font-size: 15px;
+}
+.box9{
+    font-size: 15px;
+}
+h3{
+    font-size: 25px;
+}
+.All-box p{
+    font-size: 24px;
+}
+#background{
+    height: 600px;
+}
+.card{
+    height: 340px;
+}
+.card p{
+        font-size: 19;
+        white-space: nowrap;      
+  overflow: hidden;          
+  text-overflow: ellipsis;  
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 930px) {
+    .search{
+        width: 110vw;
+    }
+    .card p{
+        font-size: 18;
+        white-space: nowrap;      
+  overflow: hidden;          
+  text-overflow: ellipsis;  
+    }
+    .card{
+         height: 300px;
+    width: 150px;
+    }
+    /* .All-box{
+        height: 300vh;
+        width: 25%;
+        line-height: 60px;
+    } */
+    /* .cart-box{
+         top: 15%;
+   left: 80%;
+   height: 500px;
+    width: 400px;
+    } */
+    .amazon-acc{
+       padding: 30px 40px 30px 40px;
+    }
+    .main-box{
+       gap: 50px;
+    }
+    .All-box p{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 33px;
+    }
+    .logo span{
+    font-size:18px;
+}
+.location{
+    font-size: 25px;
+}
+#userloct{
+    font-size: 18px;
+}
+header{
+    height: 80px;
+}
+.logo{
+    padding: 2px;
+}
+.lang span{
+    font-size: 22px;
+}
+.lists:nth-child(1){
+    font-size: 17px;
+}
+.lists span:nth-child(2){
+   font-weight: bold;
+   font-size: 19px;
+}
+.list-manu{
+    height: 700px;
+    width: 520px;
+}
+.top-menu div span{
+    font-size: 18px;
+}
+.left-menu,.right-menu{
+    font-size: 17px;
+}
+.left-menu span{
+    font-size: 21px;
+}
+.right-menu span{
+    font-size: 21px;
+}
+.Return span:first-child{
+    font-size: 16px;
+}
+.Return span:nth-child(2){
+    font-size: 17px;
+}
+.nav{
+    height: 40px;
+}
+.Head{
+    font-size: 25px;
+}
+.amazon-acc li{
+    font-size: 17px;
+}
+.amazon-acc p{
+    font-size: 19px;
+}
+.box{
+    font-size: 15px;
+}
+.box8{
+    font-size: 15px;
+}
+.box9{
+    font-size: 15px;
+}
+} 
+
+
+
+
+
+@media screen and (max-width: 380px) {
+     body{
+        width: 600%;
+        margin: 0;
+    }
+} 

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" media="screen and (max-width: 1300px)" href="phone.css">
+</head>
+<header>
+ 
+    <a href="#" class="logo" onclick="window.location.href = 'index.html'">
+        <img src="amazon-logo-1.jpg" alt="">
+        <span>.in</span>
+    </a>
+
+    <a href="#" class="location" id="location">
+
+       <span>📍</span>
+       <span class="loct">
+       <span style="color: white; font-size: 13px;" id="user"></span>
+       <span style="color: white; font-weight: bold;" id="userloct"></span>
+       </span>
+    </a>
+
+    <a href="#" class="search">
+        <select onchange="resizeDropdown(this)" id="dropdown">
+            <option value="all">all</option>
+            <option value="all categories">all categories</option>
+            <option>Alexa Skill</option>
+            <option>Amazon Devices</option>
+            <option>Video Games</option>
+            <option>Toys & Games</option>
+            <option>Prime Video</option>
+            <option>music</option>
+            <option>Prime Video</option>
+            <option>Baby</option>
+            <option>Beauty</option>
+            <option>Books</option>
+            <option>Car & Moterbike</option>
+            <option>Deals</option>
+            <option>Electronics</option>
+            <option>Software</option>
+            <option>Under ₹500</option>
+            <option>MP3 Music</option>
+        </select>
+
+    <span id="textMeasurer" style="font-size: 16px; visibility: hidden; position: absolute; white-space: pre;"></span>
+
+        <input type="text" placeholder="Search Amazon.in" id="search">
+
+        <button class="drop">🔍</button>
+    </a>
+
+  <div class="lang">
+    <img src="indiaflag.jpeg" alt="">
+    <span>EN ▼</span>
+
+    <div class="lang-menu">
+        <a href="#" class="En">English - EN</a>
+        <a href="#" class="Hi">हिन्दी - HI</a>
+        <a href="#" class="Te">తెలుగు - TE</a>
+        <a href="#" class="Ma">मराठी - MA</a>
+        <a href="#" class="Ur">اردو - UR</a>
+        <a href="#">You are shopping on Amazon.in</a>
+    </div>
+</div>
+
+<div class="account-box">
+    <div>
+        <div class="lists">
+            <span> Hello,sing in</span>
+    <span>Account & lists</span>
+</div> 
+
+<div class="list-manu">
+    <div class="top-menu">
+        
+        <div class="sing">Sing in</div>
+        <div>
+            <span>New customer?</span>
+            <span>Start here</span>
+        </div>
+         </div>
+
+        <div class="bottem-menu">
+            
+            <div class="left-menu">
+                <span>Your Lists</span>
+                <li>Create a Wish List</li>  
+                <li>Wish from Any Website </li>  
+                <li> Baby Wishlist </li>    
+                <li>Discover Your Style</li> 
+         <li>Explore Showroom </li>  
+        </div> 
+
+            <div class="right-menu">
+            
+                <span>Your Account</span>
+                <li>Your Orders </li>
+                <li>Your Wish List </li>
+                <li>Keep shopping for </li>
+                <li>Your Recommendations </li>
+                <li>Your Prime Membership </li>
+                <li>Your Prime Video </li>
+                <li>Your Subscribe & Save Items </li>
+                <li>Memberships & Subscriptions </li>
+                <li>Your Seller Account </li>
+                <li>Manage Your Content and Devices </li>
+                <li>Your Music Library </li>
+                <li>Register for a free Business Account</li>
+                
+            </div>
+     </div>
+   </div>
+</div>
+</div>
+
+<div class="Return">
+    <span>Returns</span>
+    <span>& Orders</span>
+</div>
+
+<div class="cart">
+    <span>🛒</span>
+    <span>Cart</span>
+</div>
+</header>
+
+<div class="nav">
+    <span class="menu-btn" id="allBtn">
+        <span class="icon">&#9776;</span>
+        <span>All</span>
+    </span>
+
+    <div class="overlay" id="overlay"></div>     
+    
+    <div class="All-box" id="sideBar">
+        <aside class="Head">
+         <span>👤 </span>
+         <span>Hello, Sign in</span>
+         <span onclick="window.location.href = 'index.html'"> X </span> 
+        </aside> 
+
+         <div class="box-1">
+        <h3>Trending</h3>
+        <p>Bestseller</p>
+        <p>New Releases</p>
+        </div>
+
+        <div class="box-2">
+            <h3>Digital Content and Devices</h3>
+
+            <p>
+                <span>Echo & Alexa</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Fire TV</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Kindle E-Readers & eBooks</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Audible audiobooks</span>
+                <span> > </span>
+            </a>
+            <p>
+                <span>Amazon Prime Video</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Amazon Music</span>
+                <span> > </span>
+            </p>
+        </div>
+
+        <div class="box-3">
+            <h3>Shop by Category</h3>
+
+            <p>
+                <span>mobile, computers</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>man's fashion</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>woman's fashion</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Home, kitchen, pets</span>
+                <span> > </span>
+            </p>
+            <p>
+                <span>Beauty, health</span>
+                <span> > </span>
+            </p>
+        </div>
+     </div>
+
+
+    <span class="ai">
+        <span>📊</span>
+        <span>Rufus</span>
+    </span>
+
+    <ul class="nav-ul">
+        <li class="nav-li">Prime Day Deals</li>
+        <li class="nav-li">Fresh</li>
+        <li class="nav-li">Mx Player</li>
+        <li class="nav-li">Sell</li>
+        <li class="nav-li">Books</li>
+        <li class="nav-li">Coupons</li>
+        <li class="nav-li">Car & Moterbike</li>
+    </ul>
+
+     
+    </div>
+
+    <div id="background">
+
+        <span class="next button"> &gt </span>
+
+        <span class="pre button"> &lt </span>
+    </div>
+
+      <div class="main-card">
+
+         <div class="card">
+             <p>Keep shoping for</p>
+             <div class="card-first" id="first">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>Continue shopping deals</p>
+           <div class="card-first" id="second">
+             <div class="Product-card"></div> 
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>Deals you might like in Electronics & Photo</p>
+            <div class="card-first" id="three">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>Deals related to your views</p>
+            <div class="card-first" id="four">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+     </div> 
+
+      <div class="main-card card-second">
+
+         <div class="card">
+            <p>Deals picked just for you</p>
+             <div class="card-first" id="second-first">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>Lowest ever prices & Get GST invoice | Restock now</p>
+            <div class="card-first" id="second-second">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>Deals related to items you've saved</p>
+            <div class="card-first" id="second-three">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+
+        <div class="card">
+            <p>4+ star deals for you</p>
+            <div class="card-first" id="second-four">
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             <div class="Product-card"></div>
+             </div>
+        </div>
+    </div> 
+
+    <div class="main-card">
+
+        <div class="card">
+            <p>Top curated collections from Small Businesses</p>
+
+            <div class="card-first" id="three-first">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Top picks from stores nearby</p>
+
+            <div class="card-first" id="three-second">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Up to 70% off | International brands</p>
+
+            <div class="card-first" id="three-three">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Minimum 50% off | Amazon brands & more</p>
+
+            <div class="card-first" id="three-four">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-card">
+        
+        <div class="card">
+            <p>Bestselling Devies</p>
+
+            <div class="card-first" id="four-first">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Back to School</p>
+
+            <div class="card-first" id="four-second">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Coustomer's most Loves Products</p>
+
+            <div class="card-first" id="four-three">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Under Budget Products</p>
+
+            <div class="card-first" id="four-four">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-card">
+        
+        
+        <div class="card">
+            <p>Perfect Weeding Gifts</p>
+
+            <div class="card-first" id="five-first">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Letest TV</p>
+
+            <div class="card-first" id="five-second">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Perimium Products</p>
+
+            <div class="card-first" id="five-three">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+        <div class="card">
+            <p>entertainment products</p>
+
+            <div class="card-first" id="five-four">
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+                <div class="Product-card"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product-details-box" id="details-box"></div>
+    <div class="cart-box"></div>
+
+    
+
+    <!-- yha se footer ka work start h  -->
+
+       <footer>
+        <div class="back-top" onclick="window.location.href = 'index.html'">
+            Back to top
+        </div>
+
+        <div class="amazon-acc">
+            <div>
+                <p>Get to Know Us</p>
+                <li>About Amazon</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </div>
+
+            <div>
+                <p>Connect with Us</p>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </div>
+
+            <div>
+                <p>Make Money with Us</p>
+                <li>Sell on Amazon</li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Protect and Build Your Brand</li>
+                <li>Amazon Global Selling</li>
+                <li>Supply to Amazon</li>
+                <li>Become an Affiliate</li>
+                <li>Fulfilment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon Pay on Merchants</li>
+            </div>
+
+            <div>
+                <p>Let Us Help You</p>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>Recalls and Product Safety Alerts</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </div>
+        </div>
+
+        <div class="footer-logo">
+                <img src="amazon-logo-1.jpg" alt="img" onclick="window.location.href = 'index.html'">
+                <span class="lang-con">
+                    <span>🌐 English</span>
+                    <span>India</span>
+                </span>
+        </div>
+
+        <div class="last-box">
+            
+            <div class="main-box">
+                
+                <div  class="box box1">
+                    <p>AbeBooks</p>
+                <span>Books, art
+                 & collectibles</span>
+                </div>
+            <div class="box box2">
+                <p>Shopbop</p>
+                <span>Designer
+                    Fashion Brands</span>
+            </div>
+            <div class="box box3">
+                <p>Amazon Web Services</p>
+                <span>Scalable Cloud
+                Computing Services</span>
+            </div>
+            <div class="box box4">
+                <p>Amazon Business</p>
+                <span>Everything For
+                    Your Business</span>
+                </div>
+                <div class="box box5">
+                    <p>Audible</p>
+                    <span>Download Audio Books</span>
+                </div>
+                <div class="box box6">
+                    <p>Amazon Music</p>
+                    <span>Stream millions of songs</span>
+                </div>
+                <div class="box box7">
+                    <p>IMDb</p>
+                    <span>Movies, TV
+                        & Celebrities</span>
+                    </div>
+                </div>
+                    
+                    <div class="box8">
+                <p>Conditions of Use & Sale</p>
+                <p>Privacy Notice</p>
+                <p>Interest-Based Ads</p>
+            </div>
+            <div class="box9">
+                <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+            </div>
+            
+    </div>
+    </footer>
+    <script src="index.js"></script>
+    <!-- <div class="overlay"></div> -->
+</body>
+</html>
